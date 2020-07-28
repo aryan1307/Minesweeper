@@ -1,0 +1,79 @@
+
+body{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+}
+
+.grid{
+    height:550px;
+    width:520px;
+    display:flex;
+    flex-wrap: wrap;
+    background-color:rgb(201, 200, 200);
+    margin-left: 30%;
+    margin-top: 1%;
+    
+}
+.grid div{
+    height:50px;
+    width:50px;
+    border-style: ridge;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10%;
+   }
+
+.checked {
+    background-color: red;
+}
+
+/* .bomb{
+    background-color:yellow ;
+} */
+
+
+#blinking{
+    font-size: xx-large;
+    margin-left: 40%;
+    font-weight: 800;
+    color:red;
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color:red;
+            font-size: x-large;    }
+    49%{    color: red;
+            font-size: xx-large; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: red; 
+        font-size: x-large;   }
+}
+
+#flagged{
+    width:30%;
+    font-size: xx-large;
+    font-weight: bolder;
+   margin-left: 70%;
+   
+    
+
+}
+
+#heading{
+    margin-left: 32%;
+    font-size: 40px;
+    font-weight: 800;
+    color:rgb(10, 125, 231);
+    animation:headingText 2s infinite;
+}
+@keyframes headingText{
+    0%{     color:rgb(10, 125, 231);
+            font-size: xx-large;    }
+    49%{    color: rgb(10, 125, 231);
+            font-size: xx-large; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: rgb(10, 125, 231); 
+        font-size: xx-large;   }
+}
+
